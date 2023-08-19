@@ -33,9 +33,9 @@ fun HomeScreen(navController: NavHostController) {
         Text(text = "Home Screen")
         
         Button(onClick = {
-            navController.navigate(route = Destination.Detail.passRequiredNameAndId(id = 1365 , name = "Nabi"))
+            navController.navigate(route = Destination.Detail.passRequiredNameAndId(id = 1365 , name = "Mosayeb"))
         }) {
-            Text(text = "send required Arguments")
+            Text(text = "send required Arguments - goto detail screen")
         }
 
 
@@ -46,10 +46,12 @@ fun HomeScreen(navController: NavHostController) {
 
         Button(onClick = {
             // it's optional we can pass id and nameor not
-//            navController.navigate(route = Destination.Login.passOptionalNameAndId(id = 61 , name = "nabii"))
-            navController.navigate(route = Destination.Login.passOptionalNameAndId())
+            navController.navigate(route = Destination.Login.passOptionalNameAndId(id = 61 , name = "nabii"))
+//            navController.navigate(route = Destination.Login.passOptionalNameAndId())
         }) {
-            Text(text = "send Optional Argument")
+            Text(text = "send Optional Argument - goto login screen")
         }
+
+
     }
 }
